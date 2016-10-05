@@ -4,7 +4,7 @@
   "description": "Awesome AngularJS-powered frontend",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/astefan20/sharp-allen.git"
   },
   "private": true,
   "devDependencies": {
