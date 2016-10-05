@@ -1,0 +1,15 @@
+{
+  "name": "test-ng-app",
+  "description": "The bower file of a test app",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Alex Stefan (alexandra.stefan@lateral-inc.com)"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-bootstrap": "^1.1.0",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1"
+  }
+}
