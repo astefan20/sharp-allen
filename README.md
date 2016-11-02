@@ -18,7 +18,7 @@ git clone https://github.com/astefan20/sharp-allen.git
 
 ##Step III 
 
-###Get all the dependencies we need to run the app.
+###Get all the dependencies you need to run the app.
 Open up a console at the location that you cloned sharp-allen and run:
 
 ```
