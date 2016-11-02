@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     var app_paths = {
@@ -69,10 +69,14 @@ module.exports = function(grunt) {
                     stderr: true
                 }
             }
+        },
+
+        concurrent: {
+            target: ['api', 'dev']
         }
     });
 
     grunt.registerTask('api', 'shell:nodemon');
     grunt.registerTask('dev', ['connect:server', 'watch']);
-    grunt.registerTask('default', ['dev']);
+    grunt.registerTask('default', ['concurrent']);
 };
