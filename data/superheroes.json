@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "superhero": "Blizzard Nemesisslayer",
+    "superpowerId": 1
+  },
+  {
+    "id": 2,
+    "superhero": "Claymore Fiendchanter",
+    "superpowerId": 2
+  },
+  {
+    "id": 3,
+    "superhero": "Cloud Spellsquall",
+    "superpowerId": 3
+  },
+  {
+    "id": 4,
+    "superhero": "Ghost Paradox",
+    "superpowerId": 4
+  },
+  {
+    "id": 5,
+    "superhero": "Grave Cultmourner",
+    "superpowerId": 5
+  },
+  {
+    "id": 6,
+    "superhero": "Gust Rascaldread",
+    "superpowerId": 6
+  },
+  {
+    "id": 7,
+    "superhero": "Gust Witchchaos",
+    "superpowerId": 7
+  },
+  {
+    "id": 8,
+    "superhero": "Honor Beastmourner",
+    "superpowerId": 8
+  },
+  {
+    "id": 9,
+    "superhero": "Ivy Devileye",
+    "superpowerId": 9
+  },
+  {
+    "id": 10,
+    "superhero": "Jericho Chastity",
+    "superpowerId": 10
+  },
+  {
+    "id": 11,
+    "superhero": "Jericho Shadowedge",
+    "superpowerId": 11
+  },
+  {
+    "id": 12,
+    "superhero": "Mist Grim",
+    "superpowerId": 12
+  },
+  {
+    "id": 13,
+    "superhero": "Mist Tomeseeker",
+    "superpowerId": 13
+  },
+  {
+    "id": 14,
+    "superhero": "Paradox Tempest",
+    "superpowerId": 14
+  },
+  {
+    "id": 15,
+    "superhero": "Rage Seraph",
+    "superpowerId": 15
+  },
+  {
+    "id": 16,
+    "superhero": "Seeker Griffon",
+    "superpowerId": 16
+  },
+  {
+    "id": 17,
+    "superhero": "Stiletto Arcane",
+    "superpowerId": 17
+  },
+  {
+    "id": 18,
+    "superhero": "Typhoon Blackmage",
+    "superpowerId": 18
+  },
+  {
+    "id": 19,
+    "superhero": "Zealot Chastity",
+    "superpowerId": 19
+  },
+  {
+    "id": 20,
+    "superhero": "Zealot Valentine",
+    "superpowerId": 20
+  }
+]

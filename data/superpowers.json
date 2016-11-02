@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "superpower": "Battler Charge"
+    },
+    {
+        "id": 2,
+        "superpower": "Blazing Stream"
+    },
+    {
+        "id": 3,
+        "superpower": "Charged Lance"
+    },
+    {
+        "id": 4,
+        "superpower": "Contemplation Charge"
+    },
+    {
+        "id": 5,
+        "superpower": "Electro Power"
+    },
+    {
+        "id": 6,
+        "superpower": "Electro Pulse"
+    },
+    {
+        "id": 7,
+        "superpower": "Fusion Cascade"
+    },
+    {
+        "id": 8,
+        "superpower": "Jet Beam"
+    },
+    {
+        "id": 9,
+        "superpower": "Lightning Dream"
+    },
+    {
+        "id": 10,
+        "superpower": "Meditation Monsoon"
+    },
+    {
+        "id": 11,
+        "superpower": "Memory Blazer"
+    },
+    {
+        "id": 12,
+        "superpower": "Nerve Spirit"
+    },
+    {
+        "id": 13,
+        "superpower": "Neuro Meditation"
+    },
+    {
+        "id": 14,
+        "superpower": "Neuro Shocker"
+    },
+    {
+        "id": 15,
+        "superpower": "Power Spirit"
+    },
+    {
+        "id": 16,
+        "superpower": "Psi Waterspout"
+    },
+    {
+        "id": 17,
+        "superpower": "Psychic Barrage"
+    },
+    {
+        "id": 18,
+        "superpower": "Pulse Waterspout"
+    },
+    {
+        "id": 19,
+        "superpower": "Thor Spray"
+    },
+    {
+        "id": 20,
+        "superpower": "True Battler"
+    }
+]

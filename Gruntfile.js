@@ -59,9 +59,20 @@ module.exports = function(grunt) {
                     ext: '.css'
                 }]
             }
+        },
+
+        shell: {
+            nodemon: {
+                command: 'nodemon server.js',
+                options: {
+                    stdout: true,
+                    stderr: true
+                }
+            }
         }
     });
 
+    grunt.registerTask('api', 'shell:nodemon');
     grunt.registerTask('dev', ['connect:server', 'watch']);
     grunt.registerTask('default', ['dev']);
 };
