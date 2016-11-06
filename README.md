@@ -7,6 +7,8 @@ Prerequisites:
 * [git](https://git-scm.com/downloads)
 * [nodejs](https://nodejs.org/en/download)
 
+Make sure you have the latest versions!
+
 ##Step II
 
 ###Download or clone the app.

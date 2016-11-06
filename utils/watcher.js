@@ -37,7 +37,7 @@ function getWachersCount() {
 
     countWatchers(rootElement);
 
-    console.log(watchers.length);
+    console.log(watchers.length - 2);
 }
 
 // Only for training purposes!

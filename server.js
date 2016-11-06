@@ -28,4 +28,10 @@ superheroRouter.route('/superpowers')
         res.json(superpowers);
     });
 
+
+superheroRouter.route('/error')
+    .get(function (req, res) {
+	res.status(400).send('Unexpected error due to bad code');
+    });
+
 app.use('/api', superheroRouter);
