@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+</head>
+
+<body ng-app="app">
+	<section ui-view></section>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+	<!-- Only for training purposes! -->
+	<script src="utils/watcher.js"></script>
+
+	<script src="app/app.module.js"></script>
+	<script src="app/app.config.js"></script>
+	<script src="app/layout/power-calculator.provider.js"></script>
+	<script src="app/layout/power-calculator.factory.js"></script>
+	<script src="app/layout/power-calculator.iservice.js"></script>
+	<!--<script src="app/layout/power-calculator.service.js"></script>-->
+
+	<script src="app/layout/main.controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+var ngModelDirective = ['$rootScope', function($rootScope) {
+  return {
+    restrict: 'A',
+    require: ['ngModel', '^?form', '^?ngModelOptions'],
+    controller: NgModelController,
+    // Prelink needs to run before any input directive
+    // so that we can set the NgModelOptions in NgModelController
+    // before anyone else uses it.
+    priority: 1,
+    compile: function ngModelCompile(element) {
+      // Setup initial state of the control
+      element.addClass(PRISTINE_CLASS).addClass(UNTOUCHED_CLASS).addClass(VALID_CLASS);
+
+      return {
+        pre: function ngModelPreLink(scope, element, attr, ctrls) {
+          var modelCtrl = ctrls[0],
+              formCtrl = ctrls[1] || modelCtrl.$$parentForm,
+              optionsCtrl = ctrls[2];
+
+          if (optionsCtrl) {
+            modelCtrl.$options = optionsCtrl.$options;
+          }
+
+          modelCtrl.$$initGetterSetters();
+
+          // notify others, especially parent forms
+          formCtrl.$addControl(modelCtrl);
+
+          attr.$observe('name', function(newValue) {
+            if (modelCtrl.$name !== newValue) {
+              modelCtrl.$$parentForm.$$renameControl(modelCtrl, newValue);
+            }
+          });
+
+          scope.$on('$destroy', function() {
+            modelCtrl.$$parentForm.$removeControl(modelCtrl);
+          });
+        },
+        post: function ngModelPostLink(scope, element, attr, ctrls) {
+          var modelCtrl = ctrls[0];
+          if (modelCtrl.$options.getOption('updateOn')) {
+            element.on(modelCtrl.$options.getOption('updateOn'), function(ev) {
+              modelCtrl.$$debounceViewValueCommit(ev && ev.type);
+            });
+          }
+
+          function setTouched() {
+            modelCtrl.$setTouched();
+          }
+
+          element.on('blur', function() {
+            if (modelCtrl.$touched) return;
+
+            if ($rootScope.$$phase) {
+              scope.$evalAsync(setTouched);
+            } else {
+              scope.$apply(setTouched);
+            }
+          });
+        }
+      };
+    }
+  };
+}];

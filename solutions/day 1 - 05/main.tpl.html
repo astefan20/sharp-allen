@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div ng-repeat="mutant in mainViewModel.mutantsA">
+				{{mutant}}
+			</div>
+			<div ng-repeat="mutant in mainViewModel.mutantsA">
+				<input ng-model="mutant" />
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div ng-repeat="mutant in mainViewModel.mutantsB">
+                {{mutant.name}}
+			</div>
+			<div ng-repeat="mutant in mainViewModel.mutantsB">
+				<input ng-model="mutant.name" />
+			</div>
+		</div>
+	</div>
+</div>
