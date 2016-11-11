@@ -9,6 +9,7 @@
     function MainController(powerCalculatorProvider, powerCalculatorService, powerCalculatorFactory) {
         var mainViewModel = this;
 
+        //powerCalculatorProvider.setBasePower(30);
         mainViewModel.providerPower = powerCalculatorProvider.calculatePower(50);
         mainViewModel.servicePower = powerCalculatorService.calculatePower(50);
         mainViewModel.factoryPower = powerCalculatorFactory.calculatePower(50);
